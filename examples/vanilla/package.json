@@ -1,5 +1,5 @@
 {
-  "name": "@blocknote/example-vanilla",
+  "name": "@sanefyi/example-vanilla",
   "private": true,
   "version": "0.8.0",
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "eslint src --max-warnings 0"
   },
   "dependencies": {
-    "@blocknote/core": "^0.8.0"
+    "@sanefyi/sane-editor-core": "^0.8.0"
   },
   "devDependencies": {
     "eslint": "^8.10.0",

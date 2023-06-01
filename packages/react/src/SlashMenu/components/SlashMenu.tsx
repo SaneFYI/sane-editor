@@ -2,7 +2,7 @@ import { createStyles, Menu } from "@mantine/core";
 import * as _ from "lodash";
 import { SlashMenuItem } from "./SlashMenuItem";
 import { ReactSlashMenuItem } from "../ReactSlashMenuItem";
-import { BlockSchema } from "@blocknote/core";
+import { BlockSchema } from "@sanefyi/sane-editor-core";
 
 export type SlashMenuProps<BSchema extends BlockSchema> = {
   items: ReactSlashMenuItem<BSchema>[];

@@ -1,10 +1,10 @@
-import { defaultBlockSchema } from "@blocknote/core";
-import "@blocknote/core/style.css";
+import { defaultBlockSchema } from "@sanefyi/sane-editor-core";
+import "@sanefyi/sane-editor-core/style.css";
 import {
   BlockNoteView,
   defaultReactSlashMenuItems,
   useBlockNote,
-} from "@blocknote/react";
+} from "@sanefyi/sane-editor-react";
 import { Alert, insertAlert } from "../customblocks/Alert";
 import { Button, insertButton } from "../customblocks/Button";
 import { Embed, insertEmbed } from "../customblocks/Embed";

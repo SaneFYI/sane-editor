@@ -2,7 +2,7 @@ import {
   BaseSlashMenuItem,
   BlockNoteEditor,
   BlockSchema,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 
 export class ReactSlashMenuItem<
   BSchema extends BlockSchema

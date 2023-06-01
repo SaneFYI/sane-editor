@@ -18,7 +18,7 @@ type TextCursorPosition = {
   block: Block;
   prevBlock: Block | undefined;
   nextBlock: Block | undefined;
-}
+};
 ```
 
 `block:` The block currently containing the text cursor. If the cursor is in a nested block, this is the block at the deepest possible nesting level.
@@ -54,7 +54,7 @@ You can set the text cursor position to the start or end of an existing block us
 class BlockNoteEditor {
 ...
   public setTextCursorPosition(
-    targetBlock: BlockIdentifier, 
+    targetBlock: BlockIdentifier,
     placement: "start" | "end" = "start"
   ): void;
 ...
@@ -77,9 +77,9 @@ If you need a visualization for which block contains the text cursor, the demo b
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { BlockNoteEditor, Block } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { BlockNoteEditor, Block } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 export default function App() {
   // Creates a new editor instance.
@@ -95,29 +95,29 @@ export default function App() {
           block.id === hoveredBlock.id &&
           block.props.backgroundColor !== "blue"
         ) {
-          // If the block is currently hovered by the text cursor, makes its 
+          // If the block is currently hovered by the text cursor, makes its
           // background blue if it isn't already.
           editor.updateBlock(block, {
-            props: {backgroundColor: "blue"},
+            props: { backgroundColor: "blue" },
           });
         } else if (
           block.id !== hoveredBlock.id &&
           block.props.backgroundColor === "blue"
         ) {
-          // If the block is not currently hovered by the text cursor, resets 
+          // If the block is not currently hovered by the text cursor, resets
           // its background if it's blue.
           editor.updateBlock(block, {
-            props: {backgroundColor: "default"},
+            props: { backgroundColor: "default" },
           });
         }
-        
+
         return true;
       });
-    }
-  })
-  
+    },
+  });
+
   // Renders the editor instance.
-  return <BlockNoteView editor={editor}/>;
+  return <BlockNoteView editor={editor} />;
 }
 ```
 
@@ -130,7 +130,7 @@ When you highlight content using the mouse or keyboard, this is called a selecti
 ```typescript
 type Selection = {
   blocks: Block[];
-}
+};
 ```
 
 `blocks:` The blocks currently spanned by the selection, including nested blocks.
@@ -160,9 +160,9 @@ If you need a visualization for which block contains the text cursor, the demo b
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { BlockNoteEditor, Block } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { BlockNoteEditor, Block } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 export default function App() {
   // Creates a new editor instance.

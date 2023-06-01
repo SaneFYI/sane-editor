@@ -62,9 +62,9 @@ In the example below, we use the `onEditorContentChange` option to save the edit
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { BlockNoteEditor } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { BlockNoteEditor } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 // Gets the previously stored editor contents.
 const initialContent: string | null = localStorage.getItem("editorContent");
@@ -80,7 +80,7 @@ export default function App() {
         "editorContent",
         JSON.stringify(editor.topLevelBlocks)
       );
-    }
+    },
   });
 
   // Renders the editor instance.

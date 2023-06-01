@@ -9,7 +9,7 @@ import {
   PropSchema,
   propsToAttributes,
   render,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import {
   NodeViewContent,
   NodeViewProps,

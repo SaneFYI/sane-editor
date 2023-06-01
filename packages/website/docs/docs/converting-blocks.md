@@ -45,9 +45,9 @@ The output is simplified as Markdown does not support all features of BlockNote 
 
 ```typescript /App.tsx
 import { useState } from "react";
-import { BlockNoteEditor } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { BlockNoteEditor } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 export default function App() {
   // Stores the editor's contents as Markdown.
@@ -57,17 +57,18 @@ export default function App() {
   const editor: BlockNoteEditor | null = useBlockNote({
     // Listens for when the editor's contents change.
     onEditorContentChange: (editor: BlockNoteEditor) => {
-      // Converts the editor's contents from Block objects to Markdown and 
+      // Converts the editor's contents from Block objects to Markdown and
       // saves them.
       const saveBlocksAsMarkdown = async () => {
-        const markdown: string = 
-          await editor.blocksToMarkdown(editor.topLevelBlocks);
+        const markdown: string = await editor.blocksToMarkdown(
+          editor.topLevelBlocks
+        );
         setMarkdown(markdown);
       };
       saveBlocksAsMarkdown();
-    }
+    },
   });
-  
+
   // Renders the editor instance, and its contents as Markdown below.
   return (
     <div>
@@ -106,19 +107,19 @@ Tries to create `Block` and `InlineNode` objects based on Markdown syntax, thoug
 
 ```typescript /App.tsx
 import { useEffect, useState } from "react";
-import { BlockNoteEditor, Block } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { BlockNoteEditor, Block } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 export default function App() {
   // Stores the current Markdown content.
   const [markdown, setMarkdown] = useState<string>("");
-  
+
   // Creates a new editor instance.
   const editor: BlockNoteEditor | null = useBlockNote({
     // Makes the editor non-editable.
-    editable: false
-  })
+    editable: false,
+  });
 
   useEffect(() => {
     if (editor) {
@@ -179,9 +180,9 @@ To better conform to HTML standards, children of blocks which aren't list items 
 
 ```typescript /App.tsx
 import { useState } from "react";
-import { BlockNoteEditor } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { BlockNoteEditor } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 export default function App() {
   // Stores the editor's contents as HTML.
@@ -191,14 +192,14 @@ export default function App() {
   const editor: BlockNoteEditor | null = useBlockNote({
     // Listens for when the editor's contents change.
     onEditorContentChange: (editor: BlockNoteEditor) => {
-      // Converts the editor's contents from Block objects to HTML and saves 
+      // Converts the editor's contents from Block objects to HTML and saves
       // them.
       const saveBlocksAsHTML = async () => {
         const html: string = await editor.blocksToHTML(editor.topLevelBlocks);
         setHTML(html);
       };
       saveBlocksAsHTML();
-    }
+    },
   });
 
   // Renders the editor instance, and its contents as HTML below.
@@ -239,23 +240,23 @@ Tries to create `Block` objects out of any HTML block-level elements, and `Inlin
 
 ```typescript /App.tsx
 import { useEffect, useState } from "react";
-import { BlockNoteEditor, Block } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { BlockNoteEditor, Block } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 export default function App() {
   // Stores the current HTML content.
   const [html, setHTML] = useState<string>("");
-  
+
   // Creates a new editor instance.
   const editor: BlockNoteEditor | null = useBlockNote({
     // Makes the editor non-editable.
-    editable: false
-  })
+    editable: false,
+  });
 
   useEffect(() => {
     if (editor) {
-      // Whenever the current HTML content changes, converts it to an array of 
+      // Whenever the current HTML content changes, converts it to an array of
       // Block objects and replaces the editor's content with them.
       const getBlocks = async () => {
         const blocks: Block[] = await editor.HTMLToBlocks(html);

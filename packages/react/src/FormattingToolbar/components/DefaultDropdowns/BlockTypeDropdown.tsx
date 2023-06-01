@@ -2,7 +2,7 @@ import {
   BlockNoteEditor,
   BlockSchema,
   DefaultBlockSchema,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
 import {

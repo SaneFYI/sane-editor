@@ -3,7 +3,7 @@ import {
   BlockSchema,
   BlockSideMenuDynamicParams,
   BlockSideMenuStaticParams,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import { MantineThemeOverride } from "@mantine/core";
 import { ReactElementFactory } from "../ElementFactory/components/ReactElementFactory";
 import { BlockSideMenu as ReactBlockSideMenu } from "./components/BlockSideMenu";

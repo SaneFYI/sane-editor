@@ -1,4 +1,4 @@
-import { Block, BlockNoteEditor, BlockSchema } from "@blocknote/core";
+import { Block, BlockNoteEditor, BlockSchema } from "@sanefyi/sane-editor-core";
 import { ActionIcon, Group, Menu } from "@mantine/core";
 import { FC, useEffect, useRef, useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";

@@ -1,9 +1,9 @@
-import { defaultProps } from "@blocknote/core";
+import { defaultProps } from "@sanefyi/sane-editor-core";
 import {
   createReactBlockSpec,
   InlineContent,
   ReactSlashMenuItem,
-} from "@blocknote/react";
+} from "@sanefyi/sane-editor-react";
 import React, { useState } from "react";
 import { RiAlertFill } from "react-icons/ri";
 

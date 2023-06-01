@@ -7,7 +7,11 @@ import {
   RiStrikethrough,
   RiUnderline,
 } from "react-icons/ri";
-import { BlockNoteEditor, BlockSchema, ToggledStyle } from "@blocknote/core";
+import {
+  BlockNoteEditor,
+  BlockSchema,
+  ToggledStyle,
+} from "@sanefyi/sane-editor-core";
 import { IconType } from "react-icons";
 
 const shortcuts: Record<ToggledStyle, string> = {
@@ -30,7 +34,6 @@ export const ToggledStyleButton = <BSchema extends BlockSchema>(props: {
   editor: BlockNoteEditor<BSchema>;
   toggledStyle: ToggledStyle;
 }) => {
-
   const toggleStyle = (style: ToggledStyle) => {
     props.editor.focus();
     props.editor.toggleStyles({ [style]: true });

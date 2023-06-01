@@ -14,7 +14,7 @@
       }"
       :custom-setup="{
         ...props, // do not forget it
-        deps: { '@blocknote/react': 'latest' },
+        deps: { '@sanefyi/sane-editor-react': 'latest' },
       }"
       :code-options="codeOptions"
     >

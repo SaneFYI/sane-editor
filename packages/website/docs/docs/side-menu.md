@@ -22,7 +22,7 @@ BlockNote lets you customize which items appear in the Drag Handle Menu. Have a 
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { Block, BlockNoteEditor } from "@blocknote/core";
+import { Block, BlockNoteEditor } from "@sanefyi/sane-editor-core";
 import {
   BlockNoteView,
   createReactBlockSideMenuFactory,
@@ -30,8 +30,8 @@ import {
   DragHandleMenuItem,
   RemoveBlockButton,
   useBlockNote,
-} from "@blocknote/react";
-import "@blocknote/core/style.css";
+} from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 const CustomDragHandleMenu = (props: {
   editor: BlockNoteEditor;
@@ -41,9 +41,7 @@ const CustomDragHandleMenu = (props: {
   return (
     <DragHandleMenu>
       {/*Default button to remove the block.*/}
-      <RemoveBlockButton {...props}>
-        Delete
-      </RemoveBlockButton>
+      <RemoveBlockButton {...props}>Delete</RemoveBlockButton>
       {/*Custom item which opens an alert when clicked.*/}
       <DragHandleMenuItem
         closeMenu={props.closeMenu}
@@ -62,11 +60,11 @@ export default function App() {
   const editor: BlockNoteEditor = useBlockNote({
     customElements: {
       // Makes the editor instance use the custom menu.
-      dragHandleMenu: CustomDragHandleMenu
+      dragHandleMenu: CustomDragHandleMenu,
     },
   });
   // Renders the editor instance.
-  return <BlockNoteView editor = {editor}/>;
+  return <BlockNoteView editor={editor} />;
 }
 ```
 
@@ -89,7 +87,7 @@ the `customElements` option in `useBlockNote`:
 ```typescript
 const editor = useBlockNote({
   customElements: {
-    blockSideMenuFactory: CustomBlockSideMenu
+    blockSideMenuFactory: CustomBlockSideMenu,
   },
 });
 ```

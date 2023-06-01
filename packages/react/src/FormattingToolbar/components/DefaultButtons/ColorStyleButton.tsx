@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { Menu } from "@mantine/core";
-import { BlockNoteEditor, BlockSchema } from "@blocknote/core";
+import { BlockNoteEditor, BlockSchema } from "@sanefyi/sane-editor-core";
 import { ToolbarButton } from "../../../SharedComponents/Toolbar/components/ToolbarButton";
 import { ColorIcon } from "../../../SharedComponents/ColorPicker/components/ColorIcon";
 import { ColorPicker } from "../../../SharedComponents/ColorPicker/components/ColorPicker";

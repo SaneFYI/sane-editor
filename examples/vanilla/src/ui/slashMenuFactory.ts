@@ -2,7 +2,7 @@ import {
   BaseSlashMenuItem,
   DefaultBlockSchema,
   SuggestionsMenuFactory,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import { createButton } from "./util";
 
 /**

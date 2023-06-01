@@ -14,7 +14,7 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "start": "lerna run --stream --scope @blocknote/example-editor dev",
+    "start": "lerna run --stream --scope @sanefyi/example-editor dev",
     "start:built": "npx serve examples/editor/dist",
     "test:updateSnaps": "docker run --rm  -e RUN_IN_DOCKER=true --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.33.0-focal npx playwright test -u",
     "build": "lerna run --stream build --concurrency 1",

@@ -1,4 +1,4 @@
-import { BlockNoteEditor, BlockSchema } from "@blocknote/core";
+import { BlockNoteEditor, BlockSchema } from "@sanefyi/sane-editor-core";
 import { EditorContent } from "@tiptap/react";
 // import { BlockNoteTheme } from "./BlockNoteTheme";
 // import { MantineProvider } from "@mantine/core";

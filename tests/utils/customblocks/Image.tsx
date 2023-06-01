@@ -1,5 +1,5 @@
-import { createBlockSpec, defaultProps } from "@blocknote/core";
-import { ReactSlashMenuItem } from "@blocknote/react";
+import { createBlockSpec, defaultProps } from "@sanefyi/sane-editor-core";
+import { ReactSlashMenuItem } from "@sanefyi/sane-editor-react";
 import { RiImage2Fill } from "react-icons/ri";
 
 export const Image = createBlockSpec({

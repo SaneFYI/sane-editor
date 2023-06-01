@@ -1,4 +1,7 @@
-import { DefaultBlockSchema, FormattingToolbarFactory } from "@blocknote/core";
+import {
+  DefaultBlockSchema,
+  FormattingToolbarFactory,
+} from "@sanefyi/sane-editor-core";
 import { createButton } from "./util";
 
 /**

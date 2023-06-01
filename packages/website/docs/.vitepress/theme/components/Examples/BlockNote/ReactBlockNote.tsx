@@ -1,5 +1,5 @@
-import "@blocknote/core/style.css";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
+import "@sanefyi/sane-editor-core/style.css";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
 import { useEffect, useMemo, useState } from "react";
 import YPartyKitProvider from "y-partykit/provider";
 import * as Y from "yjs";

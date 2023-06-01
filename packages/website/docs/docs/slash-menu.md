@@ -55,8 +55,8 @@ import {
   BlockNoteView,
   defaultReactSlashMenuItems,
   useBlockNote
-} from "@blocknote/react";
-import "@blocknote/core/style.css";
+} from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 function App() {
   const newSlashMenuItems: ReactSlashMenuItem[] = defaultReactSlashMenuItems;
@@ -77,14 +77,18 @@ You can also create your own, custom menu items too, as you can see in the examp
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { Block, BlockNoteEditor, PartialBlock } from "@blocknote/core";
+import {
+  Block,
+  BlockNoteEditor,
+  PartialBlock,
+} from "@sanefyi/sane-editor-core";
 import {
   BlockNoteView,
   defaultReactSlashMenuItems,
   ReactSlashMenuItem,
   useBlockNote,
-} from "@blocknote/react";
-import "@blocknote/core/style.css";
+} from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 import { HiOutlineGlobeAlt } from "react-icons/all";
 
 export default function App() {

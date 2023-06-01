@@ -4,14 +4,16 @@ import {
   SuggestionsMenuDynamicParams,
   SuggestionsMenuFactory,
   SuggestionsMenuStaticParams,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import { SlashMenu } from "./components/SlashMenu";
 import { ReactSlashMenuItem } from "./ReactSlashMenuItem";
 import { ReactElementFactory } from "../ElementFactory/components/ReactElementFactory";
 import { MantineThemeOverride } from "@mantine/core";
 
 export const createReactSlashMenuFactory =
-  <BSchema extends BlockSchema>(theme: MantineThemeOverride): SuggestionsMenuFactory<ReactSlashMenuItem<BSchema>> =>
+  <BSchema extends BlockSchema>(
+    theme: MantineThemeOverride
+  ): SuggestionsMenuFactory<ReactSlashMenuItem<BSchema>> =>
   (staticParams): SuggestionsMenu<ReactSlashMenuItem<BSchema>> =>
     ReactElementFactory<
       SuggestionsMenuStaticParams<ReactSlashMenuItem<BSchema>>,

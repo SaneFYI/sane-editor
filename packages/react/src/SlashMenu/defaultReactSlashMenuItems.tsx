@@ -2,7 +2,7 @@ import {
   BaseSlashMenuItem,
   DefaultBlockSchema,
   defaultSlashMenuItems,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import {
   RiH1,
   RiH2,

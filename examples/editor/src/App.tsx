@@ -1,6 +1,6 @@
 // import logo from './logo.svg'
-import "@blocknote/core/style.css";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
+import "@sanefyi/sane-editor-core/style.css";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
 import styles from "./App.module.css";
 
 type WindowWithProseMirror = Window & typeof globalThis & { ProseMirror: any };

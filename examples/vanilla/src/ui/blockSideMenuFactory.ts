@@ -1,4 +1,7 @@
-import { BlockSideMenuFactory, DefaultBlockSchema } from "@blocknote/core";
+import {
+  BlockSideMenuFactory,
+  DefaultBlockSchema,
+} from "@sanefyi/sane-editor-core";
 import { createButton } from "./util";
 
 /**

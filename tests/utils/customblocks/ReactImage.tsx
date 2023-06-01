@@ -2,8 +2,8 @@ import {
   InlineContent,
   createReactBlockSpec,
   ReactSlashMenuItem,
-} from "@blocknote/react";
-import { defaultProps } from "@blocknote/core";
+} from "@sanefyi/sane-editor-react";
+import { defaultProps } from "@sanefyi/sane-editor-core";
 import { RiImage2Fill } from "react-icons/ri";
 
 export const ReactImage = createReactBlockSpec({

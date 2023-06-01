@@ -1,7 +1,7 @@
 import { DragHandleMenu, DragHandleMenuProps } from "./DragHandleMenu";
 import { RemoveBlockButton } from "./DefaultButtons/RemoveBlockButton";
 import { BlockColorsButton } from "./DefaultButtons/BlockColorsButton";
-import { BlockSchema } from "@blocknote/core";
+import { BlockSchema } from "@sanefyi/sane-editor-core";
 
 export const DefaultDragHandleMenu = <BSchema extends BlockSchema>(
   props: DragHandleMenuProps<BSchema>

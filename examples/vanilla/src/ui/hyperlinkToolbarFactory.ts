@@ -1,4 +1,4 @@
-import { HyperlinkToolbarFactory } from "@blocknote/core";
+import { HyperlinkToolbarFactory } from "@sanefyi/sane-editor-core";
 import { createButton } from "./util";
 
 /**

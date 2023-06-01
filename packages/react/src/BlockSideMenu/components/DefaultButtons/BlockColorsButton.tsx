@@ -1,6 +1,6 @@
 import { ReactNode, useCallback, useRef, useState } from "react";
 import { Box, Menu } from "@mantine/core";
-import { BlockSchema, PartialBlock } from "@blocknote/core";
+import { BlockSchema, PartialBlock } from "@sanefyi/sane-editor-core";
 import { HiChevronRight } from "react-icons/hi";
 import { DragHandleMenuProps } from "../DragHandleMenu";
 import { DragHandleMenuItem } from "../DragHandleMenuItem";

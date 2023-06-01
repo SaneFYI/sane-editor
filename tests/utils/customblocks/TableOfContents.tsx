@@ -3,8 +3,8 @@ import {
   BlockSchema,
   createBlockSpec,
   InlineContent,
-} from "@blocknote/core";
-import { ReactSlashMenuItem } from "@blocknote/react";
+} from "@sanefyi/sane-editor-core";
+import { ReactSlashMenuItem } from "@sanefyi/sane-editor-react";
 import { RiLayout5Fill } from "react-icons/ri";
 
 function inlineContentToText(inlineContent: InlineContent[]) {

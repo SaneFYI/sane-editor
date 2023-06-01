@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { BlockNoteEditor, BlockSchema } from "@blocknote/core";
+import { BlockNoteEditor, BlockSchema } from "@sanefyi/sane-editor-core";
 import { RiLink } from "react-icons/ri";
 import LinkToolbarButton from "../LinkToolbarButton";
 import { formatKeyboardShortcut } from "../../../utils";

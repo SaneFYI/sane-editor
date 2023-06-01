@@ -16,7 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
     // "paths": {
-    //   "@blocknote/core": ["../../packages/core/src"]
+    //   "@sanefyi/sane-editor-core": ["../../packages/core/src"]
     // }
   },
   "include": ["src"],

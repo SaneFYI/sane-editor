@@ -3,7 +3,7 @@ import {
   FormattingToolbarDynamicParams,
   BlockNoteEditor,
   BlockSchema,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import { FormattingToolbar as ReactFormattingToolbar } from "./components/FormattingToolbar";
 import { ReactElementFactory } from "../ElementFactory/components/ReactElementFactory";
 import { FC } from "react";

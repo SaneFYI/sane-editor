@@ -77,11 +77,11 @@ Below, two editors are connected to each other. Note that anything you type is s
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { BlockNoteEditor } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
+import { BlockNoteEditor } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
 import YPartyKitProvider from "y-partykit/provider";
 import * as Y from "yjs";
-import "@blocknote/core/style.css";
+import "@sanefyi/sane-editor-core/style.css";
 
 const doc = new Y.Doc();
 const provider = new YPartyKitProvider(
@@ -114,11 +114,11 @@ export default function App() {
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { BlockNoteEditor } from "@blocknote/core";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
+import { BlockNoteEditor } from "@sanefyi/sane-editor-core";
+import { BlockNoteView, useBlockNote } from "@sanefyi/sane-editor-react";
 import YPartyKitProvider from "y-partykit/provider";
 import * as Y from "yjs";
-import "@blocknote/core/style.css";
+import "@sanefyi/sane-editor-core/style.css";
 
 const doc = new Y.Doc();
 const provider = new YPartyKitProvider(

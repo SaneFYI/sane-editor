@@ -3,7 +3,7 @@ import {
   BlockNoteEditorOptions,
   BlockSchema,
   DefaultBlockSchema,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import { DependencyList, FC, useEffect, useState } from "react";
 import { getBlockNoteTheme } from "../BlockNoteTheme";
 import { createReactBlockSideMenuFactory } from "../BlockSideMenu/BlockSideMenuFactory";

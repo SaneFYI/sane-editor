@@ -1,5 +1,5 @@
-import { createBlockSpec } from "@blocknote/core";
-import { ReactSlashMenuItem } from "@blocknote/react";
+import { createBlockSpec } from "@sanefyi/sane-editor-core";
+import { ReactSlashMenuItem } from "@sanefyi/sane-editor-react";
 import { RiSeparator } from "react-icons/ri";
 
 export const Separator = createBlockSpec({

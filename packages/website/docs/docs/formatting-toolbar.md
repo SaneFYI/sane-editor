@@ -29,7 +29,7 @@ the `customElements` option in `useBlockNote`:
 ```typescript
 const editor = useBlockNote({
   customElements: {
-    formattingToolbar: CustomFormattingToolbar
+    formattingToolbar: CustomFormattingToolbar,
   },
 });
 ```
@@ -65,7 +65,7 @@ type TextAlignButtonProps = {
 };
 const TextAlignButton = (props: TextAlignButtonProps) => ...;
 
-// Button which opens a dropdown on hover. The dropdown lets you set the 
+// Button which opens a dropdown on hover. The dropdown lets you set the
 // highlighted text's color.
 type ColorStyleButtonProps = {
   editor: BlockNoteEditor
@@ -130,7 +130,7 @@ type ToolbarButtonProps = {
   isSelected?: boolean;
   // Whether the item should be clickable.
   isDisabled?: boolean;
-  // Child components, usually just the button text. If no children are 
+  // Child components, usually just the button text. If no children are
   // given, make sure to provide an icon.
   children?: any;
 };
@@ -144,7 +144,7 @@ The example below shows a basic custom formatting toolbar with four items. The f
 ::: sandbox {template=react-ts}
 
 ```typescript /App.tsx
-import { BlockNoteEditor } from "@blocknote/core";
+import { BlockNoteEditor } from "@sanefyi/sane-editor-core";
 import {
   BlockNoteView,
   createReactFormattingToolbarFactory,
@@ -152,8 +152,8 @@ import {
   Toolbar,
   ToolbarButton,
   useBlockNote,
-} from "@blocknote/react";
-import "@blocknote/core/style.css";
+} from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 
 const CustomFormattingToolbar = (props: { editor: BlockNoteEditor }) => {
   return (
@@ -166,17 +166,17 @@ const CustomFormattingToolbar = (props: { editor: BlockNoteEditor }) => {
       <ToggledStyleButton editor={props.editor} toggledStyle={"underline"} />
       {/*Custom button to toggle blue text & background color.*/}
       <ToolbarButton
-      mainTooltip={"Blue Text & Background"}
-      onClick={() => {
-        props.editor.toggleStyles({
-          textColor: "blue",
-          backgroundColor: "blue",
-        });
-      }}
-      isSelected={
-        props.editor.getActiveStyles().textColor === "blue" &&
-        props.editor.getActiveStyles().backgroundColor === "blue"
-      }>
+        mainTooltip={"Blue Text & Background"}
+        onClick={() => {
+          props.editor.toggleStyles({
+            textColor: "blue",
+            backgroundColor: "blue",
+          });
+        }}
+        isSelected={
+          props.editor.getActiveStyles().textColor === "blue" &&
+          props.editor.getActiveStyles().backgroundColor === "blue"
+        }>
         Blue
       </ToolbarButton>
     </Toolbar>
@@ -188,12 +188,12 @@ export default function App() {
   const editor: BlockNoteEditor = useBlockNote({
     customElements: {
       // Makes the editor instance use the custom toolbar.
-      formattingToolbar: CustomFormattingToolbar
-    }
+      formattingToolbar: CustomFormattingToolbar,
+    },
   });
 
   // Renders the editor instance.
-  return <BlockNoteView editor = {editor}/>;
+  return <BlockNoteView editor={editor} />;
 }
 ```
 

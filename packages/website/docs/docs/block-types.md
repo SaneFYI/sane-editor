@@ -118,7 +118,7 @@ import {
   BlockNoteEditor,
   defaultBlockSchema,
   defaultProps,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import {
   BlockNoteView,
   useBlockNote,
@@ -126,8 +126,8 @@ import {
   InlineContent,
   ReactSlashMenuItem,
   defaultReactSlashMenuItems,
-} from "@blocknote/react";
-import "@blocknote/core/style.css";
+} from "@sanefyi/sane-editor-react";
+import "@sanefyi/sane-editor-core/style.css";
 import { RiImage2Fill } from "react-icons/ri";
 
 export default function App() {

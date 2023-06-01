@@ -3,7 +3,7 @@ import {
   HyperlinkToolbarDynamicParams,
   HyperlinkToolbarFactory,
   HyperlinkToolbarStaticParams,
-} from "@blocknote/core";
+} from "@sanefyi/sane-editor-core";
 import { HyperlinkToolbar as ReactHyperlinkToolbar } from "./components/HyperlinkToolbar";
 import { ReactElementFactory } from "../ElementFactory/components/ReactElementFactory";
 import { MantineThemeOverride } from "@mantine/core";

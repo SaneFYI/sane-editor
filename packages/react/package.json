@@ -1,5 +1,5 @@
 {
-  "name": "@blocknote/react",
+  "name": "@sanefyi/sane-editor-react",
   "homepage": "https://github.com/TypeCellOS/BlockNote",
   "private": false,
   "license": "MPL-2.0",
@@ -47,7 +47,7 @@
     "lint": "eslint src --max-warnings 0"
   },
   "dependencies": {
-    "@blocknote/core": "^0.8.0",
+    "@sanefyi/sane-editor-core": "^0.8.0",
     "@emotion/react": "^11.10.5",
     "@mantine/core": "^5.6.1",
     "@mantine/hooks": "^5.6.1",

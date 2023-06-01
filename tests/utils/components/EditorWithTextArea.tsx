@@ -1,4 +1,4 @@
-import "@blocknote/core/style.css";
+import "@sanefyi/sane-editor-core/style.css";
 import Editor from "./Editor";
 import styles from "./TextArea.module.css";
 

@@ -1,4 +1,4 @@
-import { BlockNoteEditor, BlockSchema } from "@blocknote/core";
+import { BlockNoteEditor, BlockSchema } from "@sanefyi/sane-editor-core";
 import { Toolbar } from "../../SharedComponents/Toolbar/components/Toolbar";
 import { ColorStyleButton } from "./DefaultButtons/ColorStyleButton";
 import { CreateLinkButton } from "./DefaultButtons/CreateLinkButton";
